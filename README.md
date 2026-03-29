@@ -27,6 +27,17 @@ Search for these placeholder comments and replace the links:
 - `REPLACE THIS WITH YOUR GITHUB LINK`
 - `REPLACE THIS WITH YOUR PROJECT LINK`
 - `REPLACE THIS WITH YOUR EMAIL`
+- `REPLACE assets/profile.jpg WITH YOUR ACTUAL PROFESSIONAL HEADSHOT`
+
+## Profile Photo
+
+The hero section uses this image path:
+
+```text
+assets/profile.jpg
+```
+
+Replace that file with your actual professional headshot, or update the `img` tag in `index.html` if you want to use a different file name.
 
 ## Adjusting the Design
 
@@ -68,5 +79,6 @@ https://zacharyrufener.github.io
 
 - Replace placeholder links with real profile URLs
 - Add a resume PDF
+- Replace `assets/profile.jpg` with a professional headshot
 - Replace project placeholders with real case studies or repositories
 - Add internship dates, organization names, and measurable outcomes
