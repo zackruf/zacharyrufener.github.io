@@ -1,62 +1,48 @@
 # Zachary Rufener Portfolio Site
 
-This repository contains a simple, fast, static engineering portfolio website built with plain HTML, CSS, and JavaScript for GitHub Pages deployment.
+This repository contains a minimal, static portfolio website built with plain HTML, CSS, and JavaScript for GitHub Pages.
 
 ## Files
 
-- `index.html` - Main page structure and portfolio content
-- `style.css` - Visual design, layout, responsive behavior, and animations
-- `script.js` - Mobile navigation, active section highlighting, and scroll reveal effects
+- `index.html` - Page structure and portfolio content
+- `style.css` - Typography, layout, colors, spacing, and responsive styling
+- `script.js` - Mobile navigation and subtle scroll reveal behavior
 - `README.md` - Editing and deployment notes
 
-## How to Edit the Site
+## Editing the Site
 
-### Update links
-
-Search for these comments in `index.html` and replace the placeholder values:
-
-- `REPLACE THIS WITH YOUR RESUME LINK`
-- `REPLACE THIS WITH YOUR LINKEDIN LINK`
-- `REPLACE THIS WITH YOUR GITHUB LINK`
-- `REPLACE THIS WITH YOUR EMAIL`
-
-### Update content
-
-Most site content lives in `index.html`. Edit the text inside each section:
+Most content is in `index.html`. Update the text in these sections:
 
 - Hero
 - About
 - Projects
 - Experience
 - Skills
-- Resume
 - Contact
 
-There is also a project placeholder labeled `ADD YOUR PROJECT HERE` that you can replace with a real project later.
+Search for these placeholder comments and replace the links:
 
-### Update styling
+- `REPLACE THIS WITH YOUR RESUME LINK`
+- `REPLACE THIS WITH YOUR LINKEDIN LINK`
+- `REPLACE THIS WITH YOUR GITHUB LINK`
+- `REPLACE THIS WITH YOUR PROJECT LINK`
+- `REPLACE THIS WITH YOUR EMAIL`
 
-The main theme colors and reusable design values are at the top of `style.css` inside the `:root` block.
+## Adjusting the Design
 
-You can easily adjust:
+The main design system is defined at the top of `style.css` inside `:root`.
 
-- Colors
-- Spacing
-- Border radius
-- Shadows
-- Layout widths
+You can quickly change:
 
-## How to Preview Locally
+- Background and text colors
+- Accent color
+- Layout width
+- Section spacing
+- Typography scale
 
-Because this is a static site, you can preview it in a few simple ways:
+## Previewing Locally
 
-### Option 1: Open directly
-
-Open `index.html` in a browser.
-
-### Option 2: Use a local server
-
-If you have Python installed:
+You can open `index.html` directly in a browser, or run a simple local server:
 
 ```bash
 python -m http.server
@@ -68,22 +54,19 @@ Then open:
 http://localhost:8000
 ```
 
-## How GitHub Pages Works
+## GitHub Pages
 
-This repository is intended to deploy automatically through GitHub Pages.
+This repository is set up for GitHub Pages. Because the repository name is `zacharyrufener.github.io`, pushing to the `main` branch will automatically update the live site.
 
-For a repository named `zacharyrufener.github.io`, GitHub serves the site directly from the default branch. After you push changes to `main`, GitHub Pages will automatically rebuild and publish the updated site.
-
-Your live site URL should be:
+Expected live URL:
 
 ```text
 https://zacharyrufener.github.io
 ```
 
-## Recommended Next Edits
+## Recommended Next Updates
 
 - Replace placeholder links with real profile URLs
-- Add a real resume PDF
-- Swap placeholder project links for real documents, GitHub repositories, or case studies
-- Add internship details, dates, and measurable outcomes
-- Add screenshots or CAD renders later if desired
+- Add a resume PDF
+- Replace project placeholders with real case studies or repositories
+- Add internship dates, organization names, and measurable outcomes

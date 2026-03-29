@@ -1,10 +1,9 @@
 const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".site-nav a");
 const revealItems = document.querySelectorAll(".reveal");
 const sections = document.querySelectorAll("main section[id]");
 
-if (menuToggle && nav) {
+if (menuToggle) {
   menuToggle.addEventListener("click", () => {
     const isOpen = document.body.classList.toggle("menu-open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
@@ -31,8 +30,8 @@ if ("IntersectionObserver" in window) {
       });
     },
     {
-      threshold: 0.15,
-      rootMargin: "0px 0px -40px 0px"
+      threshold: 0.12,
+      rootMargin: "0px 0px -32px 0px"
     }
   );
 
@@ -46,14 +45,13 @@ if ("IntersectionObserver" in window) {
         }
 
         navLinks.forEach((link) => {
-          const isActive = link.getAttribute("href") === `#${entry.target.id}`;
-          link.classList.toggle("is-active", isActive);
+          link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
         });
       });
     },
     {
-      threshold: 0.45,
-      rootMargin: "-20% 0px -45% 0px"
+      threshold: 0.4,
+      rootMargin: "-20% 0px -50% 0px"
     }
   );
 
